@@ -1,0 +1,62 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>box model</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<style>
+div{
+    background: rebeccapurple;
+    width: 200px;
+    height: 500px;
+    border: 5px solid cornflowerblue;
+    margin: 30px;
+}
+#one{
+    position: static;
+}
+#two{
+    background-color: teal;
+    position: relative;
+    left: 100px;
+    top: -100px;
+}
+#three{
+    background-color: orange;
+    position: absolute;
+    left: 300px;
+}
+#four{
+    background-color: crimson;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+#five{
+    background-color: yellow;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+</style>
+</head>
+            
+<body>
+<div id="one"></div>
+
+
+<div id="two"></div>
+
+
+<div id="three"></div>
+
+
+<div id="four"></div>
+
+<div id="five"></div>
+
+</body>
+
+</html>
