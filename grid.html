@@ -1,0 +1,59 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>grid</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<style>
+.container {  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 0.7fr 1fr 1.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "sideleft main sideright"
+    "footer footer footer";
+}
+
+.header { 
+  grid-area: header; 
+  background-color:hotpink ;
+}
+
+.sideleft { 
+  grid-area: sideleft; 
+  background-color: pink;
+}
+
+.main { 
+  grid-area: main; 
+  background-color: fuchsia;
+}
+
+.sideright { 
+  grid-area: sideright; 
+  background-color: palevioletred;
+}
+
+.footer { 
+  grid-area: footer; 
+  background-color: mediumvioletred;
+}
+
+</style>
+</head>
+    
+<body>
+  <div class="container">
+    <div class="header"><p>This is a header!!!</p></div>
+    <div class="sideleft">Sideleft!!!</div>
+    <div class="main">Main!!!</div>
+    <div class="sideright">Sideright!!!</div>
+    <div class="footer">Footer!!!</div>
+  </div>
+</body>
+
+</html>
